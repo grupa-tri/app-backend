@@ -1,0 +1,20 @@
+import cors from "cors";
+import express from "express";
+import { healthRouter } from "./routes/health.js";
+import { todosRouter } from "./routes/todos.js";
+
+export function createApp() {
+  const app = express();
+
+  app.use(
+    cors({
+      origin: process.env.CORS_ORIGIN ?? "http://localhost:5173",
+    }),
+  );
+  app.use(express.json());
+
+  app.use("/health", healthRouter);
+  app.use("/api/todos", todosRouter);
+
+  return app;
+}
