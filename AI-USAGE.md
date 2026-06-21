@@ -1,4 +1,4 @@
-# AI Usage — Backend
+# This is the main documentation file for documenting AI usage
 
 ## Prompt
 
