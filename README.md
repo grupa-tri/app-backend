@@ -69,3 +69,7 @@ Server runs at `http://localhost:3000`.
 - `npm run db:migrate` — Apply migrations manually (also runs automatically on start)
 - `npm run db:seed` — Insert sample todos
 - `npm run typecheck` — Type check without emit
+
+## CI / GHCR
+ 
+**Image:** `ghcr.io/grupa-tri/app-backend:latest` and `ghcr.io/grupa-tri/app-backend:VERSION` (from `package.json`)
