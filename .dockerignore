@@ -1,0 +1,11 @@
+node_modules
+dist
+.git
+.github
+.env
+.env.*
+*.log
+coverage
+dockerlocal
+README.md
+AI-USAGE.md
